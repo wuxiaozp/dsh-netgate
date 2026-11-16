@@ -1,0 +1,70 @@
+{
+  "name": "dsh-netgate",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "网闸·基础版",
+      "en": "NetGate · Basic"
+    },
+    "icon": "globe",
+    "contributes": {
+      "composer.strip": [
+        {
+          "id": "web-state",
+          "icon": "globe",
+          "text": "联网：开 · 点关"
+        }
+      ],
+      "panels": [
+        {
+          "id": "web",
+          "title": "网闸 · 基础版",
+          "icon": "globe",
+          "placement": [
+            "chat.panel",
+            "features"
+          ]
+        }
+      ]
+    }
+  },
+  "description": "dsh-go native plugin: one switch that cuts web search and all shell network access, while coding keeps working.",
+  "keywords": [
+    "dsh",
+    "dsh-go",
+    "plugin",
+    "offline",
+    "web-search",
+    "privacy",
+    "netguard"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wuxiaozp/dsh-netgate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxiaozp/dsh-netgate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuxiaozp/dsh-netgate/issues"
+  },
+  "files": [
+    "lib",
+    "netguard",
+    "cordis.patch.yml",
+    "install.sh",
+    "README.md",
+    "LICENSE",
+    "docs/index.json"
+  ]
+}

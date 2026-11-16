@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "网闸 · NetGate",
+    "en": "NetGate"
+  },
+  "description": {
+    "zh": "dsh-go 原生插件：一个开关切断联网，写代码不受影响。",
+    "en": "dsh-go native plugin: one switch cuts internet access while coding keeps working."
+  },
+  "metadata": {
+    "categories": {
+      "tools": {
+        "title": {
+          "zh": "工具",
+          "en": "Tools"
+        }
+      },
+      "privacy": {
+        "title": {
+          "zh": "隐私",
+          "en": "Privacy"
+        }
+      }
+    },
+    "labels": {
+      "offline": {
+        "title": {
+          "zh": "离线",
+          "en": "Offline"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-netgate",
+      "title": {
+        "zh": "网闸·基础版",
+        "en": "NetGate · Basic"
+      },
+      "description": {
+        "zh": "联网总开关：移除联网搜索与网页抓取，并在进程层切断 bash 及其子进程的外网连接；本地写代码、编译、测试不受影响。面板：网闸 · 基础版。",
+        "en": "Master switch: removes web search and fetch, and cuts every bash child from the network at the process level. Local coding, builds and tests keep working."
+      },
+      "author": "wuxiaozp",
+      "homepage": "https://github.com/wuxiaozp/dsh-netgate#readme",
+      "repository": {
+        "url": "https://github.com/wuxiaozp/dsh-netgate"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwZjE3MmEiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNWVlYWQ0IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMTUgMzJoMzRNMzIgMTVjNiA2IDYgMjggMCAzNE0zMiAxNWMtNiA2LTYgMjggMCAzNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNWVlYWQ0IiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9Ii42NSIvPjxwYXRoIGQ9Ik0xOCA0NiA0NiAxOCIgc3Ryb2tlPSIjZjg3MTcxIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg==",
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "offline",
+          "web-search",
+          "privacy",
+          "netguard",
+          "dsh-go"
+        ],
+        "labels": [
+          "offline"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794849047,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/wuxiaozp/dsh-netgate",
+            "commit": "cd9d541bd776f8508e0a6fbee2ac030a2e69380e"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}

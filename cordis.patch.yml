@@ -1,0 +1,4 @@
+# id must equal "name" in package.json.
+- insert:
+    - id: dsh-netgate
+      name: dsh-netgate
