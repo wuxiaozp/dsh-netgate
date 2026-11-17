@@ -119,3 +119,10 @@ through that shell, so conversations keep working.
   architectures with `netguard/build.sh` (tcc or gcc).
 - Needs `/usr/bin/bash` (falls back to `/bin/bash`).
 
+### 使用授权
+
+你可以自由使用、修改和分发这个插件，包括用于商业项目，不需要署名，也不需要额外申请。
+
+### Permission to use
+
+You are free to use, modify and distribute this plugin, including in commercial projects, without attribution or further permission.
