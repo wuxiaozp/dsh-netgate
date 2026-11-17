@@ -26,31 +26,6 @@ DSH 里 `web_search` / `web_fetch` 挂在每个会话的 preset 上，没有开�
 同时，模型用浏览器打开网页也会被拒。本地读写文件、编译、跑测试、`python3`/`node`
 本地计算全部正常。
 
-### 安装
-
-插件市场：在 App 的 `设置 › 插件 › 插件市场 › 索引来源` 添加
-`https://wuxiaozp.github.io/dsh-netgate/index.json`，搜「网闸」安装。
-
-或命令行（GitHub 固定版本）：
-
-```sh
-dsh plugin --profile web add "git+https://github.com/wuxiaozp/dsh-netgate.git#52369d880c4d14c09652f64a25992e7e5c767cfb"
-```
-
-或本地：
-
-```sh
-git clone https://github.com/wuxiaozp/dsh-netgate.git
-cd dsh-netgate
-sh install.sh
-```
-
-> npm 包暂未发布（发布需账号 2FA）；插件市场索引走 GitHub，不依赖 npm。
-
-> 装之前如果装过旧的 `local-web-toggle`，先卸掉：两个插件共用同一个断网锁。
-
-装完回对话页，输入框上方出现「联网：开 · 点关」；面板在「全部功能 → 网闸 · 基础版」。
-
 ### 使用
 
 - 点状态条切换：「联网：开 · 点关」↔「联网：已断网 · 点开」，立即生效，重启 App 保留。
@@ -115,34 +90,6 @@ curl a search engine or fetch pages from `python3`. NetGate closes three layers:
 
 Model-initiated browser opens are refused too. Local files, builds, tests and
 `python3` / `node` computation keep working.
-
-### Install
-
-Plugin market: add `https://wuxiaozp.github.io/dsh-netgate/index.json` under
-Settings › Plugins › Plugin market › index sources, then search for NetGate.
-
-Command line (pinned GitHub commit):
-
-```sh
-dsh plugin --profile web add "git+https://github.com/wuxiaozp/dsh-netgate.git#52369d880c4d14c09652f64a25992e7e5c767cfb"
-```
-
-Or locally:
-
-```sh
-git clone https://github.com/wuxiaozp/dsh-netgate.git
-cd dsh-netgate
-sh install.sh
-```
-
-> The npm package is not published yet (publishing needs account 2FA); the market
-> index installs from GitHub instead.
-
-> If the older `local-web-toggle` is installed, remove it first: both drive the
-> same netguard lock file.
-
-Then open a chat: a strip above the input box shows the switch, and the panel is
-under "All features → NetGate · Basic".
 
 ### Verify
 

@@ -54,7 +54,7 @@ npm publish --access public
 npm publish --access public
 ```
 
-发布后别人可以用 `dsh plugin --profile web add dsh-netgate` 直接装。
+发布后别人可以从 npm 安装（本仓库目前没有发布 npm 包）。
 
 ## 4. 插件市场索引（让 App 里能搜到）
 
