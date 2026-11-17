@@ -39,7 +39,7 @@ git push -u origin main
 
 加上 Topics，方便搜索：`dsh` `dsh-go` `plugin` `offline` `web-search` `privacy`。
 
-## 3. npm（可选；需要账号已开 2FA，否则 403）
+## 3. npm（可选）
 
 ```sh
 cd dsh-netgate
@@ -54,7 +54,7 @@ npm publish --access public
 npm publish --access public
 ```
 
-发布后别人可以从 npm 安装（本仓库目前没有发布 npm 包）。
+发布后别人可以从 npm 安装。
 
 ## 4. 插件市场索引（让 App 里能搜到）
 
