@@ -13,7 +13,7 @@ PLUGINS=$DSH_HOME/dsh-go/plugins
 DEST=$PLUGINS/dsh-netgate
 GUARD=$DSH_HOME/dsh-go/netguard
 
-echo "网闸 · 基础版 (dsh-netgate 0.1.0)"
+echo "网闸 · 基础版 (dsh-netgate 0.2.0)"
 echo "DSH_HOME=$DSH_HOME"
 
 if [ "$HERE" = "$DEST" ]; then
