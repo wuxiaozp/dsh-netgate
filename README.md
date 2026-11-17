@@ -64,9 +64,6 @@ bash 包装器 ──锁文件存在──> LD_PRELOAD=netguard.so ──> conne
 - `netguard.so` 是 arm64 + glibc 的预编译版本；其它架构执行 `netguard/build.sh` 重编。
 - 需要 `/usr/bin/bash`（找不到时回退 `/bin/bash`）。
 
-### 许可
-
-MIT。
 
 ---
 
@@ -122,6 +119,3 @@ through that shell, so conversations keep working.
   architectures with `netguard/build.sh` (tcc or gcc).
 - Needs `/usr/bin/bash` (falls back to `/bin/bash`).
 
-### License
-
-MIT.
