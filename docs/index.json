@@ -64,12 +64,12 @@
       },
       "versions": [
         {
-          "version": "0.1.0",
-          "publishTimestamp": 1794849047,
+          "version": "0.2.0",
+          "publishTimestamp": 1763370000,
           "source": {
             "type": "git",
             "url": "https://github.com/wuxiaozp/dsh-netgate",
-            "commit": "c7378eef9c369a6d750d9e762a9d1ce6a6d9e3d7"
+            "commit": "04078d1e1e9c0722340414f53edab83cf28a7e40"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0-0"
