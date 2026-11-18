@@ -1,6 +1,6 @@
 # 网闸 · NetGate
 
-**One switch that cuts the model off the internet — for DeepSeek Harness (DSH), on phone (dsh-go) and desktop.**
+**NetGate for DeepSeek Harness: one switch that cuts the model off the internet — phone (dsh-go) and Windows (DSH Desktop) — while coding keeps working.**
 
 [中文](#中文) · [English](#english)
 
