@@ -5,8 +5,8 @@
     "en": "NetGate"
   },
   "description": {
-    "zh": "dsh-go 原生插件：一个开关切断联网，写代码不受影响。",
-    "en": "dsh-go native plugin: one switch cuts internet access while coding keeps working."
+    "zh": "DeepSeek Harness 的联网总开关（手机端 dsh-go / 电脑端 DSH Desktop）。关闭后工具与命令层被拦；本地编辑通常照常，编译、装包等需要联网的步骤可能失败。",
+    "en": "An internet switch for DeepSeek Harness (phone dsh-go / desktop DSH Desktop). Local editing usually keeps working; builds and installs that need the network may fail."
   },
   "metadata": {
     "categories": {
@@ -40,8 +40,8 @@
         "en": "NetGate · Basic"
       },
       "description": {
-        "zh": "手机端（dsh-go）：移除联网搜索与网页抓取，命令守卫 + 进程级断网，写代码不受影响。电脑端是另一个包 dsh-netgate-win 0.1.9，两个版本号独立、不能互相安装；Windows 端没有进程级断网。",
-        "en": "Phone (dsh-go): removes web search/fetch, guards shell commands and blocks the network at the process level; coding keeps working. The Windows build is a separate package (dsh-netgate-win 0.1.9) without process-level blocking."
+        "zh": "手机端（dsh-go）：移除联网搜索与网页抓取，命令守卫 + 进程级断网，本地编辑通常照常，编译/装包等联网步骤可能失败。电脑端是另一个包 dsh-netgate-win 0.1.9，两个版本号独立、不能互相安装；Windows 端没有进程级断网。",
+        "en": "Phone (dsh-go): removes web search/fetch, guards shell commands and blocks the network at the process level; local editing usually keeps working; networked builds may fail. The Windows build is a separate package (dsh-netgate-win 0.1.9) without process-level blocking."
       },
       "author": "wuxiaozp",
       "homepage": "https://github.com/wuxiaozp/dsh-netgate#readme",

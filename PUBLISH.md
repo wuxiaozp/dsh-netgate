@@ -12,7 +12,7 @@
 | 仓库 | `dsh-netgate` |
 | 版本 | `0.1.0` |
 | App 内显示 | 插件「网闸·基础版」；面板「网闸 · 基础版」 |
-| 一句话 | 一个开关切断联网，写代码不受影响 |
+| 一句话 | 一个开关切断联网，本地编辑照常；联网构建可能失败 |
 
 ## 1. 前置
 
@@ -25,7 +25,7 @@
 网页最省事：
 
 1. 打开 <https://github.com/new?name=dsh-netgate&visibility=public>
-2. 描述填：`dsh-go native plugin: one switch cuts internet access while coding keeps working`
+2. 描述填：`NetGate for DeepSeek Harness: one switch that cuts the model off the internet`
 3. 建好后把这个仓库目录上传（或在本机 `git remote add origin ...` 后 push）。
 
 本机推送：
@@ -80,7 +80,7 @@ git push --tags
 
 **仓库简介（About）**
 
-> 网闸 · NetGate — DeepSeek Harness 的联网总开关，手机端与电脑端各一个版本。关掉后模型真的连不出去：联网工具移除、联网命令拦截、bash 子进程断网；本地写代码、编译、测试照常。
+> 网闸 · NetGate — DeepSeek Harness 的联网总开关，手机端与电脑端各一个版本。关掉后模型真的连不出去：联网工具移除、联网命令拦截、bash 子进程断网。本地编辑照常；编译、装包等需要联网的步骤可能失败。
 
 **Release / 社区帖**
 
@@ -91,7 +91,7 @@ git push --tags
 >
 > 网闸把三层一起关：工具列表移除联网工具、执行前拒绝明显的联网命令、给 bash 及其
 > 所有子进程注入 `netguard.so`，非回环 `connect()` 直接 `ECONNREFUSED`——写进脚本
-> 也一样。本地读写文件、编译、跑测试、`python3`/`node` 计算全部正常。
+> 也一样。本地读写文件、`python3`/`node` 计算通常正常；编译、装包、拉依赖等联网步骤可能失败。
 >
 > 输入框上方一条状态条，点一下就切；面板里还有严格模式（关闭时连 bash 也停用）。
 >
@@ -101,7 +101,7 @@ git push --tags
 
 **一句话转发**
 
-> 给你的 DSH 手机版装个「网闸」：一个开关真断网，写代码不受影响。
+> 给你的 DSH 手机版装个「网闸」：一个开关真断网，本地编辑照常。
 
 ## 7. 需要我代发时
 

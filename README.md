@@ -1,6 +1,6 @@
 # 网闸 · NetGate
 
-**NetGate for DeepSeek Harness: one switch that cuts the model off the internet — phone (dsh-go) and Windows (DSH Desktop) — while coding keeps working.**
+**NetGate for DeepSeek Harness: one switch that cuts the model off the internet — phone (dsh-go) and Windows (DSH Desktop) — and most local work keeps working.**
 
 [中文](#中文) · [English](#english)
 
@@ -8,7 +8,7 @@
 
 | 平台 | 位置 | 说明 |
 |---|---|---|
-| 手机端（dsh-go） | 本仓库根目录 | 原生插件：移除联网工具 + 命令守卫 + 进程级断网（`netguard.so`），写代码不受影响 |
+| 手机端（dsh-go） | 本仓库根目录 | 原生插件：移除联网工具 + 命令守卫 + 进程级断网（`netguard.so`）；本地编辑照常，编译/装包等需要联网的步骤可能失败 |
 | 电脑端（DeepSeek Harness） | [`windows/`](windows/) | Cordis 插件：输入框上方开关 + 命令守卫；Windows 没有 `LD_PRELOAD`，不做进程级断网 |
 
 ### 两版差异（先看这个）
@@ -47,8 +47,9 @@ DSH 里 `web_search` / `web_fetch` 挂在每个会话的 preset 上，没有开�
 | 守卫层 | 明显的联网命令（`curl`、`wget`、网址、`python` 联网、`git clone`、装包）执行前被拒，并回一句「联网已关闭」 |
 | 进程层 | `/usr/local/bin/bash` 注入 `netguard.so`：bash 及其所有子进程的非回环连接直接 `ECONNREFUSED`——写进脚本也一样 |
 
-同时，模型用浏览器打开网页也会被拒。本地读写文件、编译、跑测试、`python3`/`node`
-本地计算全部正常。
+同时，模型用浏览器打开网页也会被拒。本地读写文件、`python3`/`node` 本地计算通常照常；
+但**编译、装包、拉依赖等需要联网的步骤可能失败或变慢**——这是开关的副作用，不是 bug，
+要用时先点开联网。
 
 还有一档**严格模式**：关闭联网之后可以一键连 `bash` 和手机 shell 一起停用，模型
 完全没有执行命令的入口，适合"只让它说话、别动手"的时候。
@@ -92,6 +93,8 @@ bash 包装器 ──锁文件存在──> LD_PRELOAD=netguard.so ──> conne
 - 理论上可主动清除 `LD_PRELOAD` 绕过；守卫会拦下提到该变量的命令。
 - `netguard.so` 是 arm64 + glibc 的预编译版本；其它架构执行 `netguard/build.sh` 重编。
 - 需要 `/usr/bin/bash`（找不到时回退 `/bin/bash`）。
+- 关闭联网期间，`npm/pnpm install`、`git clone`、下载依赖等需要联网的步骤会失败或变慢；
+  本地编辑不受影响，但“写代码”里包含的联网环节会受影响。
 
 
 ---
@@ -117,8 +120,9 @@ curl a search engine or fetch pages from `python3`. NetGate closes three layers:
 | Guard | Obvious network commands (`curl`, `wget`, URLs, `python` networking, `git clone`, package installs) are refused before they run |
 | Process | `/usr/local/bin/bash` loads `netguard.so`; every non-loopback `connect()` from the shell and its children returns `ECONNREFUSED` — including commands run from a script |
 
-Model-initiated browser opens are refused too. Local files, builds, tests and
-`python3` / `node` computation keep working.
+Model-initiated browser opens are refused too. Local file work and `python3` / `node`
+computation usually keep working; **builds, installs and dependency downloads that need
+the network may fail or slow down** — turn the switch back on for those.
 
 There is also a **strict mode**: once web access is off, one tap also removes
 `bash` and the phone shell, so the model cannot run any command at all.

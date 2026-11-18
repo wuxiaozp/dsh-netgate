@@ -40,8 +40,8 @@
         "en": "NetGate for Windows"
       },
       "description": {
-        "zh": "输入框上方一键切换：断网时对新会话移除 web 搜索与网页抓取，并拒绝 bash / pwsh 里的联网命令；本地读写、编译与测试照常。",
-        "en": "One switch above the composer: while offline it removes web search and fetch from new sessions and refuses networked shell commands, while local edits, builds and tests keep working."
+        "zh": "输入框上方一键切换：断网时对新会话移除 web 搜索与网页抓取，并拒绝 bash / pwsh 里的联网命令；本地编辑通常照常；编译、装包等需要联网的步骤可能失败。",
+        "en": "One switch above the composer: while offline it removes web search and fetch from new sessions and refuses networked shell commands, while local edits usually keep working; builds and installs that need the network may fail."
       },
       "author": "wuxiaozp",
       "homepage": "https://github.com/wuxiaozp/dsh-netgate/tree/main/windows#readme",
