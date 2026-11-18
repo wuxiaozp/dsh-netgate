@@ -18,6 +18,8 @@
 给 DeepSeek Harness 加一个「联网总开关」，手机端（dsh-go）与电脑端（DSH Desktop）各有实现。
 关掉后，模型不只是"没有联网搜索工具"，而是**真的连不出去**；打开后一切恢复。
 
+下面主要讲手机端；电脑端的实现与限制见 [`windows/docs/DETAIL.md`](windows/docs/DETAIL.md)。
+
 ### 为什么需要它
 
 DSH 里 `web_search` / `web_fetch` 挂在每个会话的 preset 上，没有开关。更麻烦的是：
@@ -84,6 +86,9 @@ bash 包装器 ──锁文件存在──> LD_PRELOAD=netguard.so ──> conne
 A switch for DeepSeek Harness on the phone (dsh-go). When it is off the model is not merely missing the web
 tools — it **cannot reach the network at all**. Turning it back on restores
 everything.
+
+This section covers the phone build; the Windows build is under
+[`windows/`](windows/) with its own [DETAIL](windows/docs/DETAIL.md).
 
 ### Why
 
