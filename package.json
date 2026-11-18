@@ -1,6 +1,6 @@
 {
   "name": "dsh-netgate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "main": "lib/index.js",
   "dsh": {
@@ -23,7 +23,8 @@
         {
           "id": "web-state",
           "icon": "globe",
-          "text": "联网：开 · 点关"
+          "text": "联网：开 · 点关",
+          "panel": "web"
         }
       ],
       "panels": [
@@ -34,7 +35,8 @@
           "placement": [
             "chat.panel",
             "features"
-          ]
+          ],
+          "presentation": "sheet"
         }
       ]
     }
