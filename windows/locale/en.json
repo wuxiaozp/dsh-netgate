@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "NetGate for Windows",
+    "description": "One switch that cuts the model off the internet: while offline it removes web search and fetch from new sessions and refuses networked bash / pwsh commands, while local edits, builds and tests keep working. Toggle from the strip above the composer.",
+    "detail": "docs/DETAIL.md"
+  }
+}

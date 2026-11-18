@@ -1,0 +1,61 @@
+{
+  "name": "dsh-netgate-win",
+  "version": "0.1.9",
+  "type": "module",
+  "description": "Windows 版网闸：一键切断模型联网能力（Web 工具 + 联网命令守卫），本地读写、编译与测试不受影响。",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "offline",
+    "netguard",
+    "netgate",
+    "privacy",
+    "windows"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "author": "wuxiaozp",
+  "homepage": "https://github.com/wuxiaozp/dsh-netgate/tree/main/windows#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxiaozp/dsh-netgate.git",
+    "directory": "windows"
+  },
+  "bugs": {
+    "url": "https://github.com/wuxiaozp/dsh-netgate/issues"
+  }
+}

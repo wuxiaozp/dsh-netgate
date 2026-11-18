@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "网闸 · Windows 版",
+    "description": "一键切断模型联网：断网时对新会话移除 web 搜索与网页抓取，并拒绝 bash / pwsh 里的联网命令；本地读写、编译与测试照常。输入框上方状态条直接切换。",
+    "detail": "docs/DETAIL.md"
+  }
+}

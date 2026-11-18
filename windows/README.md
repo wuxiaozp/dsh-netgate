@@ -1,0 +1,14 @@
+# dsh-netgate-win
+
+网闸（NetGate）的 Windows 版：一个开关切断模型联网，本地写代码不受影响。
+
+- 点输入框上方的开关切换「联网：开 / 已断网」；
+- 断网后旁边出现「严格：关/开」小按钮，打开后连 `bash` / `pwsh` 一起停用；
+- 断网时移除 `web_search` / `web_fetch`，并拒绝 shell 里的联网命令（回环地址放行）；
+- 状态持久化到 `$DSH_HOME/netgate-win/state.json`（严格模式为临时状态，重启自动关闭）。
+
+实现说明与限制见 [docs/DETAIL.md](docs/DETAIL.md)。
+
+## 使用授权
+
+你可以自由使用、修改和分发这个插件，包括用于商业项目，不需要署名，也不需要额外申请。

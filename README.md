@@ -1,8 +1,15 @@
 # 网闸 · NetGate
 
-**A dsh-go native plugin: one switch that cuts the model off from the internet — without breaking coding.**
+**One switch that cuts the model off the internet — phone (dsh-go native) and Windows (DSH Desktop).**
 
 [中文](#中文) · [English](#english)
+
+## 两个平台
+
+| 平台 | 位置 | 说明 |
+|---|---|---|
+| 手机（dsh-go） | 本仓库根目录 | 原生插件：移除联网工具 + 命令守卫 + 进程级断网（`netguard.so`），写代码不受影响 |
+| Windows（DSH Desktop） | [`windows/`](windows/) | Cordis 插件：输入框上方开关 + 命令守卫；Windows 没有 `LD_PRELOAD`，不做进程级断网 |
 
 ---
 
