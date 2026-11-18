@@ -7,7 +7,7 @@
 - 断网时移除 `web_search` / `web_fetch`，并拒绝 shell 里的联网命令（回环地址放行）；
 - 状态持久化到 `$DSH_HOME/netgate-win/state.json`（严格模式为临时状态，重启自动关闭）。
 
-实现说明与限制见 [docs/DETAIL.md](docs/DETAIL.md)。
+实现说明与限制见 [docs/DETAIL.md](docs/DETAIL.md)；与手机端的差异（含版本号为什么不同）见仓库根 README 的「两版差异」。
 
 ## 使用授权
 
