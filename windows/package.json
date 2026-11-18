@@ -1,6 +1,6 @@
 {
   "name": "dsh-netgate-win",
-  "version": "0.1.10",
+  "version": "0.1.9",
   "type": "module",
   "description": "Windows 版网闸：一键切断模型联网能力（Web 工具 + 联网命令守卫），本地读写、编译与测试不受影响。",
   "main": "index.js",
