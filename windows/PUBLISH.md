@@ -8,7 +8,7 @@
 |---|---|---|
 | `name` | `dsh-netgate-win` | npm 上若被占用就换名（如 `@你的scope/dsh-netgate-win`）；换名后 `cordis.patch.yml` 里两处 `dsh-netgate-win` 也要同步改成同一个名字（`id` 与 `name` 必须等于 `package.json` 的 `name`） |
 | `author` / `repository` / `homepage` / `bugs` | 未写 | 建议补上，插件页会显示 |
-| `version` | `0.1.8` | 每次发布递增 |
+| `version` | `0.1.9` | 每次发布递增 |
 
 `private` 已删除，`publishConfig.access` 为 `public`；`files` 是白名单，`PUBLISH.md`、`examples/` 不会进包。本包位于仓库的 `windows/` 子目录。
 
@@ -46,7 +46,7 @@ DSH 从索引安装 Git 源时，会把 `source.url` + `source.commit` 组合成
 
 ## 版本兼容
 
-`engines.dsh` 声明为 `>=0.2.1-rc.2 <0.3.0-0`。0.1.8 是在 DSH Desktop `0.2.2-rc.3`（Windows）上开发和验证的。
+`engines.dsh` 声明为 `>=0.2.1-rc.2 <0.3.0-0`。0.1.9 是在 DSH Desktop `0.2.2-rc.3`（Windows）上开发和验证的。
 插件市场会按这个范围判断「与当前 DSH 兼容」。
 
 ## 这个包做了什么
