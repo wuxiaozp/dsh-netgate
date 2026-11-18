@@ -1,6 +1,6 @@
 # 网闸 · NetGate
 
-**One switch that cuts the model off the internet — phone (dsh-go native) and Windows (DSH Desktop).**
+**One switch that cuts the model off the internet — for DeepSeek Harness (DSH), on phone (dsh-go) and desktop.**
 
 [中文](#中文) · [English](#english)
 
@@ -8,15 +8,15 @@
 
 | 平台 | 位置 | 说明 |
 |---|---|---|
-| 手机（dsh-go） | 本仓库根目录 | 原生插件：移除联网工具 + 命令守卫 + 进程级断网（`netguard.so`），写代码不受影响 |
-| Windows（DSH Desktop） | [`windows/`](windows/) | Cordis 插件：输入框上方开关 + 命令守卫；Windows 没有 `LD_PRELOAD`，不做进程级断网 |
+| 手机端（dsh-go） | 本仓库根目录 | 原生插件：移除联网工具 + 命令守卫 + 进程级断网（`netguard.so`），写代码不受影响 |
+| 电脑端（DeepSeek Harness） | [`windows/`](windows/) | Cordis 插件：输入框上方开关 + 命令守卫；Windows 没有 `LD_PRELOAD`，不做进程级断网 |
 
 ---
 
 ## 中文
 
-给 dsh-go 对话加一个「联网总开关」。关掉后，模型不只是"没有联网搜索工具"，而是
-**真的连不出去**；打开后一切恢复。
+给 DeepSeek Harness 加一个「联网总开关」，手机端（dsh-go）与电脑端（DSH Desktop）各有实现。
+关掉后，模型不只是"没有联网搜索工具"，而是**真的连不出去**；打开后一切恢复。
 
 ### 为什么需要它
 
@@ -81,7 +81,7 @@ bash 包装器 ──锁文件存在──> LD_PRELOAD=netguard.so ──> conne
 
 ## English
 
-A switch for dsh-go chats. When it is off the model is not merely missing the web
+A switch for DeepSeek Harness on the phone (dsh-go). When it is off the model is not merely missing the web
 tools — it **cannot reach the network at all**. Turning it back on restores
 everything.
 
