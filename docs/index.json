@@ -40,8 +40,8 @@
         "en": "NetGate · Basic"
       },
       "description": {
-        "zh": "联网总开关：移除联网搜索与网页抓取，并在进程层切断 bash 及其子进程的外网连接；关闭后还能开严格模式，连命令行一起停用。本地写代码、编译、测试不受影响。",
-        "en": "Master switch: removes web search and fetch, cuts every bash child from the network, and offers a strict mode that also removes the shell. Local coding, builds and tests keep working."
+        "zh": "手机端（dsh-go）：移除联网搜索与网页抓取，命令守卫 + 进程级断网，写代码不受影响。电脑端是另一个包 dsh-netgate-win 0.1.9，两个版本号独立、不能互相安装；Windows 端没有进程级断网。",
+        "en": "Phone (dsh-go): removes web search/fetch, guards shell commands and blocks the network at the process level; coding keeps working. The Windows build is a separate package (dsh-netgate-win 0.1.9) without process-level blocking."
       },
       "author": "wuxiaozp",
       "homepage": "https://github.com/wuxiaozp/dsh-netgate#readme",
@@ -84,8 +84,8 @@
         "en": "NetGate for Windows"
       },
       "description": {
-        "zh": "输入框上方一键切换：断网时移除 web 搜索与网页抓取，并拒绝 bash / pwsh / terminal 里的联网命令；关闭后旁边出现严格模式按钮，可连 shell 一起停用。本地读写、编译与测试照常。",
-        "en": "One switch above the composer: while offline it removes web search and fetch and refuses networked shell commands; a strict button appears while off and removes the shell too. Local edits, builds and tests keep working."
+        "zh": "电脑端（Windows DSH Desktop）：移除联网搜索与网页抓取、拒绝联网命令；没有进程级断网，严格模式重启后自动关闭。手机端是另一个包 dsh-netgate 0.3.0。",
+        "en": "Windows (DSH Desktop): removes web search/fetch and refuses networked commands; no process-level blocking, and strict mode resets on restart. The phone build is a separate package (dsh-netgate 0.3.0)."
       },
       "author": "wuxiaozp",
       "homepage": "https://github.com/wuxiaozp/dsh-netgate/tree/main/windows#readme",
