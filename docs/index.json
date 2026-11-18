@@ -93,7 +93,7 @@
         "url": "https://github.com/wuxiaozp/dsh-netgate",
         "directory": "windows"
       },
-      "icon": "https://wuxiaozp.github.io/dsh-netgate/windows/icon.svg",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik5ldEdhdGUgZm9yIFdpbmRvd3MiPgogIDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTAxODI2Ii8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzYzZTZjMCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHBhdGggZD0iTTE1IDMyaDM0TTMyIDE1YzYgNiA2IDI4IDAgMzRNMzIgMTVjLTYgNi02IDI4IDAgMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzYzZTZjMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjY1Ii8+CiAgPHBhdGggZD0iTTE5IDQ1IDQ1IDE5IiBzdHJva2U9IiNmMjcwNWEiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHJlY3QgeD0iNDAiIHk9IjM4IiB3aWR0aD0iMTIiIGhlaWdodD0iOSIgcng9IjIiIGZpbGw9IiMxMDE4MjYiIHN0cm9rZT0iIzYzZTZjMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHBhdGggZD0iTTQzIDM4di0yYTMgMyAwIDAgMSA2IDB2MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjNlNmMwIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==",
       "metadata": {
         "category": "tools",
         "keywords": [
