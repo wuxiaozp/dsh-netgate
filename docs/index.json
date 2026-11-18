@@ -76,6 +76,52 @@
           }
         }
       ]
+    },
+    {
+      "name": "dsh-netgate-win",
+      "title": {
+        "zh": "网闸 · Windows 版",
+        "en": "NetGate for Windows"
+      },
+      "description": {
+        "zh": "输入框上方一键切换：断网时移除 web 搜索与网页抓取，并拒绝 bash / pwsh / terminal 里的联网命令；关闭后旁边出现严格模式按钮，可连 shell 一起停用。本地读写、编译与测试照常。",
+        "en": "One switch above the composer: while offline it removes web search and fetch and refuses networked shell commands; a strict button appears while off and removes the shell too. Local edits, builds and tests keep working."
+      },
+      "author": "wuxiaozp",
+      "homepage": "https://github.com/wuxiaozp/dsh-netgate/tree/main/windows#readme",
+      "repository": {
+        "url": "https://github.com/wuxiaozp/dsh-netgate",
+        "directory": "windows"
+      },
+      "icon": "https://wuxiaozp.github.io/dsh-netgate/windows/icon.svg",
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "offline",
+          "netguard",
+          "privacy",
+          "windows",
+          "dsh"
+        ],
+        "labels": [
+          "offline"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.9",
+          "publishTimestamp": 1795000000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/wuxiaozp/dsh-netgate",
+            "commit": "2e3db3dc3f198941ce1af05049b778b95d927250",
+            "path": "windows"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+          }
+        }
+      ]
     }
   ]
 }
