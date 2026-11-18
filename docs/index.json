@@ -69,7 +69,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/wuxiaozp/dsh-netgate",
-            "commit": "bdb1bc1f8dfb129bca43894c96c87924f1f6cdcf"
+            "commit": "889b50869628318660c68cb362a9b1b71fdb0422"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0-0"
