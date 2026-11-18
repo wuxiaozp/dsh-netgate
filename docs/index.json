@@ -40,8 +40,8 @@
         "en": "NetGate · Basic"
       },
       "description": {
-        "zh": "联网总开关：移除联网搜索与网页抓取，并在进程层切断 bash 及其子进程的外网连接；本地写代码、编译、测试不受影响。面板：网闸 · 基础版。",
-        "en": "Master switch: removes web search and fetch, and cuts every bash child from the network at the process level. Local coding, builds and tests keep working."
+        "zh": "联网总开关：移除联网搜索与网页抓取，并在进程层切断 bash 及其子进程的外网连接；关闭后还能开严格模式，连命令行一起停用。本地写代码、编译、测试不受影响。",
+        "en": "Master switch: removes web search and fetch, cuts every bash child from the network, and offers a strict mode that also removes the shell. Local coding, builds and tests keep working."
       },
       "author": "wuxiaozp",
       "homepage": "https://github.com/wuxiaozp/dsh-netgate#readme",
@@ -64,12 +64,12 @@
       },
       "versions": [
         {
-          "version": "0.3.0",
-          "publishTimestamp": 1763420000,
+          "version": "0.1.0",
+          "publishTimestamp": 1794849047,
           "source": {
             "type": "git",
             "url": "https://github.com/wuxiaozp/dsh-netgate",
-            "commit": "110dbc2bf679f19e832378ba3e050e2b9d36e6cd"
+            "commit": "c7378eef9c369a6d750d9e762a9d1ce6a6d9e3d7"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0-0"

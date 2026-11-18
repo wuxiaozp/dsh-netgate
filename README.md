@@ -26,10 +26,15 @@ DSH 里 `web_search` / `web_fetch` 挂在每个会话的 preset 上，没有开�
 同时，模型用浏览器打开网页也会被拒。本地读写文件、编译、跑测试、`python3`/`node`
 本地计算全部正常。
 
+还有一档**严格模式**：关闭联网之后可以一键连 `bash` 和手机 shell 一起停用，模型
+完全没有执行命令的入口，适合"只让它说话、别动手"的时候。
+
 ### 使用
 
-- 点状态条切换：「联网：开 · 点关」↔「联网：已断网 · 点开」，立即生效，重启 App 保留。
-- 关闭联网后，面板里会出现「开启严格模式」按钮；打开后连 bash 与手机 shell 一并停用。
+- 点输入框上方的「联网：开 · 点设置」，从底部弹出控制面板——**新对话、还没发消息时也能点**。
+- 面板里是「联网总开关」；关掉后搜索、抓取、命令联网全禁，并且会出现「开启严格模式」按钮。
+- 点「开启严格模式」后，连 `bash` 与手机 shell 一并停用；再点「关闭严格模式」或打开联网即恢复。
+- 设置立即生效，重启 App 也保留。
 
 ### 验证
 
@@ -87,6 +92,17 @@ curl a search engine or fetch pages from `python3`. NetGate closes three layers:
 
 Model-initiated browser opens are refused too. Local files, builds, tests and
 `python3` / `node` computation keep working.
+
+There is also a **strict mode**: once web access is off, one tap also removes
+`bash` and the phone shell, so the model cannot run any command at all.
+
+### Usage
+
+- Tap the strip above the input box («Web: on · tap setup») to open a bottom
+  sheet — this works in a brand-new chat, before the first message.
+- Turn web access off there; a «Turn strict on» button appears. It removes
+  `bash` and the phone shell too. Turn strict off, or turn web access back on,
+  to restore everything.
 
 ### Verify
 
