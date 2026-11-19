@@ -64,12 +64,12 @@
       },
       "versions": [
         {
-          "version": "0.3.0",
+          "version": "0.3.1",
           "publishTimestamp": 1794849047,
           "source": {
             "type": "git",
             "url": "https://github.com/wuxiaozp/dsh-netgate",
-            "commit": "2e3db3dc3f198941ce1af05049b778b95d927250"
+            "commit": "889b50869628318660c68cb362a9b1b71fdb0422"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0-0"
@@ -84,8 +84,8 @@
         "en": "NetGate · Windows Basic"
       },
       "description": {
-        "zh": "电脑端（Windows DSH Desktop）：移除联网搜索与网页抓取、拒绝联网命令；没有进程级断网，严格模式重启后自动关闭。手机端是另一个包 dsh-netgate 0.3.0。",
-        "en": "Windows (DSH Desktop): removes web search/fetch and refuses networked commands; no process-level blocking, and strict mode resets on restart. The phone build is a separate package (dsh-netgate 0.3.0)."
+        "zh": "电脑端（Windows DSH Desktop）：移除联网搜索与网页抓取、拒绝联网命令；没有进程级断网，严格模式重启后自动关闭。手机端是另一个包 dsh-netgate 0.3.1。",
+        "en": "Windows (DSH Desktop): removes web search/fetch and refuses networked commands; no process-level blocking, and strict mode resets on restart. The phone build is a separate package (dsh-netgate 0.3.1)."
       },
       "author": "wuxiaozp",
       "homepage": "https://github.com/wuxiaozp/dsh-netgate/tree/main/windows#readme",
