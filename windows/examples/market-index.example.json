@@ -36,8 +36,8 @@
     {
       "name": "dsh-netgate-win",
       "title": {
-        "zh": "网闸 · Windows 版",
-        "en": "NetGate for Windows"
+        "zh": "网闸 · Windows 基础版",
+        "en": "NetGate · Windows Basic"
       },
       "description": {
         "zh": "输入框上方一键切换：断网时对新会话移除 web 搜索与网页抓取，并拒绝 bash / pwsh 里的联网命令；本地编辑通常照常；编译、装包等需要联网的步骤可能失败。",

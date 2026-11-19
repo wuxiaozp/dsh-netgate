@@ -36,8 +36,8 @@
     {
       "name": "dsh-netgate",
       "title": {
-        "zh": "网闸·基础版",
-        "en": "NetGate · Basic"
+        "zh": "网闸 · 手机基础版",
+        "en": "NetGate · Phone Basic"
       },
       "description": {
         "zh": "手机端（dsh-go）：移除联网搜索与网页抓取，命令守卫 + 进程级断网，本地编辑通常照常，编译/装包等联网步骤可能失败。电脑端是另一个包 dsh-netgate-win 0.1.9，两个版本号独立、不能互相安装；Windows 端没有进程级断网。",
@@ -64,12 +64,12 @@
       },
       "versions": [
         {
-          "version": "0.3.1",
+          "version": "0.3.0",
           "publishTimestamp": 1794849047,
           "source": {
             "type": "git",
             "url": "https://github.com/wuxiaozp/dsh-netgate",
-            "commit": "889b50869628318660c68cb362a9b1b71fdb0422"
+            "commit": "2e3db3dc3f198941ce1af05049b778b95d927250"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0-0"
@@ -80,8 +80,8 @@
     {
       "name": "dsh-netgate-win",
       "title": {
-        "zh": "网闸 · Windows 版",
-        "en": "NetGate for Windows"
+        "zh": "网闸 · Windows 基础版",
+        "en": "NetGate · Windows Basic"
       },
       "description": {
         "zh": "电脑端（Windows DSH Desktop）：移除联网搜索与网页抓取、拒绝联网命令；没有进程级断网，严格模式重启后自动关闭。手机端是另一个包 dsh-netgate 0.3.0。",
